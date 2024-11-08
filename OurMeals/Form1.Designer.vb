@@ -107,6 +107,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = Global.OurMeals.My.Resources.Resources.trashcan
         Me.PictureBox1.Location = New System.Drawing.Point(740, 38)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(45, 43)
@@ -155,6 +156,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
+        Me.PictureBox2.Image = Global.OurMeals.My.Resources.Resources.trashcan
         Me.PictureBox2.Location = New System.Drawing.Point(740, 37)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(45, 43)
@@ -204,6 +206,7 @@ Partial Class Form1
         '
         'PictureBox3
         '
+        Me.PictureBox3.Image = Global.OurMeals.My.Resources.Resources.trashcan
         Me.PictureBox3.Location = New System.Drawing.Point(740, 26)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(45, 43)
@@ -232,6 +235,7 @@ Partial Class Form1
         '
         'PictureBox4
         '
+        Me.PictureBox4.Image = Global.OurMeals.My.Resources.Resources.home
         Me.PictureBox4.Location = New System.Drawing.Point(12, 554)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(87, 88)
@@ -241,6 +245,7 @@ Partial Class Form1
         '
         'PictureBox5
         '
+        Me.PictureBox5.Image = Global.OurMeals.My.Resources.Resources.notificationbell
         Me.PictureBox5.Location = New System.Drawing.Point(121, 554)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(87, 88)
@@ -250,6 +255,7 @@ Partial Class Form1
         '
         'PictureBox6
         '
+        Me.PictureBox6.Image = Global.OurMeals.My.Resources.Resources.settings
         Me.PictureBox6.Location = New System.Drawing.Point(234, 554)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(87, 88)
