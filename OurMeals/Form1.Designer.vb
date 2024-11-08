@@ -27,10 +27,10 @@ Partial Class Form1
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -96,14 +96,23 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
-        'Button1
+        'Button3
         '
-        Me.Button1.Location = New System.Drawing.Point(667, 143)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 29)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Create a New List"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button3.Location = New System.Drawing.Point(607, 38)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(127, 43)
+        Me.Button3.TabIndex = 5
+        Me.Button3.Text = "Make Routine"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(740, 38)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(45, 43)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabStop = False
         '
         'Button2
         '
@@ -114,24 +123,14 @@ Partial Class Form1
         Me.Button2.Text = "View/Edit"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'Button1
         '
-        Me.PictureBox1.Image = Global.OurMeals.My.Resources.Resources.trashcan
-        Me.PictureBox1.Location = New System.Drawing.Point(740, 38)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(45, 43)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(607, 38)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(127, 43)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Make Routine"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button1.Location = New System.Drawing.Point(667, 143)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(141, 29)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Create a New List"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -156,7 +155,6 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.OurMeals.My.Resources.Resources.trashcan
         Me.PictureBox2.Location = New System.Drawing.Point(740, 37)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(45, 43)
@@ -206,7 +204,6 @@ Partial Class Form1
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = Global.OurMeals.My.Resources.Resources.trashcan
         Me.PictureBox3.Location = New System.Drawing.Point(740, 26)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(45, 43)
@@ -235,7 +232,6 @@ Partial Class Form1
         '
         'PictureBox4
         '
-        Me.PictureBox4.Image = Global.OurMeals.My.Resources.Resources.home
         Me.PictureBox4.Location = New System.Drawing.Point(12, 554)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(87, 88)
@@ -245,7 +241,6 @@ Partial Class Form1
         '
         'PictureBox5
         '
-        Me.PictureBox5.Image = Global.OurMeals.My.Resources.Resources.notificationbell
         Me.PictureBox5.Location = New System.Drawing.Point(121, 554)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(87, 88)
@@ -255,7 +250,6 @@ Partial Class Form1
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = Global.OurMeals.My.Resources.Resources.settings
         Me.PictureBox6.Location = New System.Drawing.Point(234, 554)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(87, 88)
