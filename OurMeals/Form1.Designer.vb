@@ -22,277 +22,302 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(2, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(309, 90)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "OurMeals"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(12, 120)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(196, 38)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Shopping Lists"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(6, 42)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(200, 28)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Weekly Shopping List"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 178)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(796, 101)
-        Me.GroupBox1.TabIndex = 3
-        Me.GroupBox1.TabStop = False
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(607, 38)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(127, 43)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Make Routine"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.OurMeals.My.Resources.Resources.trashcan
-        Me.PictureBox1.Location = New System.Drawing.Point(740, 38)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(45, 43)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(500, 38)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(101, 44)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "View/Edit"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(667, 143)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 29)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Create a New List"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.PictureBox2)
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 294)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(796, 101)
-        Me.GroupBox2.TabIndex = 4
-        Me.GroupBox2.TabStop = False
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(607, 37)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(127, 43)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Make Routine"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.OurMeals.My.Resources.Resources.trashcan
-        Me.PictureBox2.Location = New System.Drawing.Point(740, 37)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(45, 43)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(500, 37)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(101, 44)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "View/Edit"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(6, 42)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(147, 28)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Meat Purchases"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.Button6)
-        Me.GroupBox3.Controls.Add(Me.PictureBox3)
-        Me.GroupBox3.Controls.Add(Me.Button7)
-        Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 410)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(796, 101)
-        Me.GroupBox3.TabIndex = 5
-        Me.GroupBox3.TabStop = False
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(607, 26)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(127, 43)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Make Routine"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.OurMeals.My.Resources.Resources.trashcan
-        Me.PictureBox3.Location = New System.Drawing.Point(740, 26)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(45, 43)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 4
-        Me.PictureBox3.TabStop = False
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(500, 26)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(101, 44)
-        Me.Button7.TabIndex = 4
-        Me.Button7.Text = "View/Edit"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(6, 42)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(211, 28)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Monthly Shopping List"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.OurMeals.My.Resources.Resources.home
-        Me.PictureBox4.Location = New System.Drawing.Point(12, 554)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(87, 88)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 6
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.OurMeals.My.Resources.Resources.notificationbell
-        Me.PictureBox5.Location = New System.Drawing.Point(121, 554)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(87, 88)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 7
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.OurMeals.My.Resources.Resources.settings
-        Me.PictureBox6.Location = New System.Drawing.Point(234, 554)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(87, 88)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 8
-        Me.PictureBox6.TabStop = False
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(813, 658)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Label1 = New Label()
+        Label2 = New Label()
+        BackgroundWorker1 = New ComponentModel.BackgroundWorker()
+        Label3 = New Label()
+        GroupBox1 = New GroupBox()
+        Button3 = New Button()
+        PictureBox1 = New PictureBox()
+        Button2 = New Button()
+        Button1 = New Button()
+        GroupBox2 = New GroupBox()
+        Button4 = New Button()
+        PictureBox2 = New PictureBox()
+        Button5 = New Button()
+        Label4 = New Label()
+        GroupBox3 = New GroupBox()
+        Button6 = New Button()
+        PictureBox3 = New PictureBox()
+        Button7 = New Button()
+        Label5 = New Label()
+        PictureBox4 = New PictureBox()
+        PictureBox5 = New PictureBox()
+        PictureBox6 = New PictureBox()
+        GroupBox1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox3.SuspendLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.Font = New Font("Segoe UI", 36.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(3, 14)
+        Label1.Margin = New Padding(5, 0, 5, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(502, 144)
+        Label1.TabIndex = 0
+        Label1.Text = "OurMeals"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(20, 192)
+        Label2.Margin = New Padding(5, 0, 5, 0)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(310, 60)
+        Label2.TabIndex = 1
+        Label2.Text = "Shopping Lists"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(10, 67)
+        Label3.Margin = New Padding(5, 0, 5, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(325, 45)
+        Label3.TabIndex = 2
+        Label3.Text = "Weekly Shopping List"
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(Button3)
+        GroupBox1.Controls.Add(PictureBox1)
+        GroupBox1.Controls.Add(Button2)
+        GroupBox1.Controls.Add(Label3)
+        GroupBox1.Location = New Point(20, 285)
+        GroupBox1.Margin = New Padding(5)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Padding = New Padding(5)
+        GroupBox1.Size = New Size(1294, 162)
+        GroupBox1.TabIndex = 3
+        GroupBox1.TabStop = False
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(986, 61)
+        Button3.Margin = New Padding(5)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(206, 69)
+        Button3.TabIndex = 5
+        Button3.Text = "Make Routine"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.trashcan
+        PictureBox1.Location = New Point(1202, 61)
+        PictureBox1.Margin = New Padding(5)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(73, 69)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 4
+        PictureBox1.TabStop = False
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(812, 61)
+        Button2.Margin = New Padding(5)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(164, 70)
+        Button2.TabIndex = 4
+        Button2.Text = "View/Edit"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(1084, 229)
+        Button1.Margin = New Padding(5)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(229, 46)
+        Button1.TabIndex = 3
+        Button1.Text = "Create a New List"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.Controls.Add(Button4)
+        GroupBox2.Controls.Add(PictureBox2)
+        GroupBox2.Controls.Add(Button5)
+        GroupBox2.Controls.Add(Label4)
+        GroupBox2.Location = New Point(20, 470)
+        GroupBox2.Margin = New Padding(5)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Padding = New Padding(5)
+        GroupBox2.Size = New Size(1294, 162)
+        GroupBox2.TabIndex = 4
+        GroupBox2.TabStop = False
+        ' 
+        ' Button4
+        ' 
+        Button4.Location = New Point(986, 59)
+        Button4.Margin = New Padding(5)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(206, 69)
+        Button4.TabIndex = 5
+        Button4.Text = "Make Routine"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources.trashcan
+        PictureBox2.Location = New Point(1202, 59)
+        PictureBox2.Margin = New Padding(5)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(73, 69)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 4
+        PictureBox2.TabStop = False
+        ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(812, 59)
+        Button5.Margin = New Padding(5)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(164, 70)
+        Button5.TabIndex = 4
+        Button5.Text = "View/Edit"
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(10, 67)
+        Label4.Margin = New Padding(5, 0, 5, 0)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(243, 45)
+        Label4.TabIndex = 2
+        Label4.Text = "Meat Purchases"
+        ' 
+        ' GroupBox3
+        ' 
+        GroupBox3.Controls.Add(Button6)
+        GroupBox3.Controls.Add(PictureBox3)
+        GroupBox3.Controls.Add(Button7)
+        GroupBox3.Controls.Add(Label5)
+        GroupBox3.Location = New Point(20, 656)
+        GroupBox3.Margin = New Padding(5)
+        GroupBox3.Name = "GroupBox3"
+        GroupBox3.Padding = New Padding(5)
+        GroupBox3.Size = New Size(1294, 162)
+        GroupBox3.TabIndex = 5
+        GroupBox3.TabStop = False
+        ' 
+        ' Button6
+        ' 
+        Button6.Location = New Point(986, 42)
+        Button6.Margin = New Padding(5)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(206, 69)
+        Button6.TabIndex = 5
+        Button6.Text = "Make Routine"
+        Button6.UseVisualStyleBackColor = True
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = My.Resources.Resources.trashcan
+        PictureBox3.Location = New Point(1202, 42)
+        PictureBox3.Margin = New Padding(5)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(73, 69)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 4
+        PictureBox3.TabStop = False
+        ' 
+        ' Button7
+        ' 
+        Button7.Location = New Point(812, 42)
+        Button7.Margin = New Padding(5)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(164, 70)
+        Button7.TabIndex = 4
+        Button7.Text = "View/Edit"
+        Button7.UseVisualStyleBackColor = True
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(10, 67)
+        Label5.Margin = New Padding(5, 0, 5, 0)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(341, 45)
+        Label5.TabIndex = 2
+        Label5.Text = "Monthly Shopping List"
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = My.Resources.Resources.home
+        PictureBox4.Location = New Point(20, 886)
+        PictureBox4.Margin = New Padding(5)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(141, 141)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox4.TabIndex = 6
+        PictureBox4.TabStop = False
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.Image = My.Resources.Resources.notificationbell
+        PictureBox5.Location = New Point(197, 886)
+        PictureBox5.Margin = New Padding(5)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(141, 141)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox5.TabIndex = 7
+        PictureBox5.TabStop = False
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.Image = My.Resources.Resources.settings
+        PictureBox6.Location = New Point(380, 886)
+        PictureBox6.Margin = New Padding(5)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(141, 141)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox6.TabIndex = 8
+        PictureBox6.TabStop = False
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(13.0F, 32.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1321, 1053)
+        Controls.Add(PictureBox6)
+        Controls.Add(PictureBox5)
+        Controls.Add(PictureBox4)
+        Controls.Add(GroupBox3)
+        Controls.Add(GroupBox2)
+        Controls.Add(Button1)
+        Controls.Add(GroupBox1)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Margin = New Padding(5)
+        Name = "Form1"
+        Text = "Form1"
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox2.ResumeLayout(False)
+        GroupBox2.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox3.ResumeLayout(False)
+        GroupBox3.PerformLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 
