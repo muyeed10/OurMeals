@@ -15,7 +15,7 @@
         Controls.Remove(GroupBox6)
     End Sub
 
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) 
         Me.Close()
     End Sub
 
