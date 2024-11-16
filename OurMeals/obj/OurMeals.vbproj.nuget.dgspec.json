@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zakir\\Documents\\CPS613\\Project\\OurMeals\\OurMeals.vbproj": {}
+    "C:\\Users\\zakir\\Documents\\CPS613\\ProjectOtherWork\\muyeedswork\\OurMeals\\OurMeals\\OurMeals.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\zakir\\Documents\\CPS613\\Project\\OurMeals\\OurMeals.vbproj": {
+    "C:\\Users\\zakir\\Documents\\CPS613\\ProjectOtherWork\\muyeedswork\\OurMeals\\OurMeals\\OurMeals.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zakir\\Documents\\CPS613\\Project\\OurMeals\\OurMeals.vbproj",
+        "projectUniqueName": "C:\\Users\\zakir\\Documents\\CPS613\\ProjectOtherWork\\muyeedswork\\OurMeals\\OurMeals\\OurMeals.vbproj",
         "projectName": "OurMeals",
-        "projectPath": "C:\\Users\\zakir\\Documents\\CPS613\\Project\\OurMeals\\OurMeals.vbproj",
+        "projectPath": "C:\\Users\\zakir\\Documents\\CPS613\\ProjectOtherWork\\muyeedswork\\OurMeals\\OurMeals\\OurMeals.vbproj",
         "packagesPath": "C:\\Users\\zakir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zakir\\Documents\\CPS613\\Project\\OurMeals\\obj\\",
+        "outputPath": "C:\\Users\\zakir\\Documents\\CPS613\\ProjectOtherWork\\muyeedswork\\OurMeals\\OurMeals\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
