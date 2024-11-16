@@ -91,16 +91,19 @@
         weeklyList.AddItem(New Item("Milk", 2))
         weeklyList.AddItem(New Item("Eggs", 12))
         weeklyList.AddItem(New Item("Bread", 1))
+        weeklyList.changeDescription("A shopping list to guide the house through essential weekly items.")
         weeklyList.changeRoutine()
 
         Dim bakingList As New ShoppingList("Baking Supplies")
         bakingList.AddItem(New Item("Flour", 1))
         bakingList.AddItem(New Item("Sugar", 1))
         bakingList.AddItem(New Item("Baking Soda", 1))
+        bakingList.changeDescription("A shopping list for when we feel like cake.")
 
         Dim meatList As New ShoppingList("Meat Purchases")
         meatList.AddItem(New Item("Chicken Breast", 3))
         meatList.AddItem(New Item("Ground Beef", 2))
+        meatList.changeDescription("A shopping list to hit our protein goals.")
 
         'Creating ShoppingListControl for each list and add to the shoppingListArr
         AddShoppingListControl(weeklyList)

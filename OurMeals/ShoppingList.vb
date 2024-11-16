@@ -2,6 +2,7 @@
     Private listName As String
     Private itemArr As New ArrayList()
     Private isRoutine As Boolean = False
+    Private description As String = ""
 
     Public Sub New(listName As String, Optional itemArr As ArrayList = Nothing)
         Me.listName = listName
@@ -65,5 +66,13 @@
     Public Function getRoutine()
         Return isRoutine
     End Function
+
+    Public Function getDescription()
+        Return description
+    End Function
+
+    Public Sub changeDescription(newDesc As String)
+        description = newDesc
+    End Sub
 
 End Class
