@@ -8,6 +8,7 @@ Partial Class ShoppingListControl
     Private removeButton As Button
     Private listLabel As Label
     Private parentForm As Form1
+    Private routinePictureBox As PictureBox
 
     Public Sub New(parent As Form1, shoppingList As ShoppingList)
         Me.parentForm = parent
@@ -18,46 +19,54 @@ Partial Class ShoppingListControl
 
     ' Initialize the controls within the GroupBox
     Private Sub InitializeControl()
-        'Set the size and other properties of the GroupBox
+        ' Set the size and other properties of the GroupBox
         Me.Size = New Size(995, 127)
         Me.Margin = New Padding(4)
 
-        'Created and configured the List Label
+        ' Create the PictureBox for the routine indicator
+        routinePictureBox = New PictureBox()
+        routinePictureBox.Size = New Size(32, 32) ' Adjust the size of the image as needed
+        routinePictureBox.Location = New Point(8, 48) ' Position it to the very left
+        routinePictureBox.SizeMode = PictureBoxSizeMode.Zoom
+
+        ' Create and configure the List Label
         listLabel = New Label()
         listLabel.Text = shoppingList.GetListName()
         listLabel.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular)
-        listLabel.Location = New Point(8, 52)
+        listLabel.Location = New Point(routinePictureBox.Location.X + routinePictureBox.Width + 10, routinePictureBox.Location.Y)
         listLabel.Size = New Size(243, 32)
 
-        'Created the View/Edit button
+        ' Create the View/Edit button
         viewEditButton = New Button()
         viewEditButton.Text = "View/Edit"
         viewEditButton.Size = New Size(126, 55)
         viewEditButton.Location = New Point(625, 48)
+        AddHandler viewEditButton.Click, AddressOf ViewEditButton_Click
 
-        'Created the Make Routine button
+        ' Create the Make Routine button
         makeRoutineButton = New Button()
         makeRoutineButton.Text = "Make Routine"
         makeRoutineButton.Size = New Size(158, 54)
         makeRoutineButton.Location = New Point(758, 48)
+        AddHandler makeRoutineButton.Click, AddressOf ToggleRoutineStatus
 
-        'Created the trash can button
+        ' Create the trash can button
         removeButton = New Button()
         removeButton.BackgroundImage = My.Resources.trashcan
         removeButton.BackgroundImageLayout = ImageLayout.Zoom
         removeButton.Size = New Size(57, 58)
         removeButton.Location = New Point(925, 48)
-
-        'Added event handler for the remove button
         AddHandler removeButton.Click, AddressOf RemoveButton_Click
 
-        'Added event handler for the view/edit button
-        AddHandler viewEditButton.Click, AddressOf ViewEditButton_Click
-
+        ' Add controls to the GroupBox
+        Me.Controls.Add(routinePictureBox)
         Me.Controls.Add(listLabel)
         Me.Controls.Add(viewEditButton)
         Me.Controls.Add(makeRoutineButton)
         Me.Controls.Add(removeButton)
+
+        ' Set the routine indicator based on the current routine status
+        UpdateRoutineIndicator()
     End Sub
 
     Private Sub RemoveButton_Click(sender As Object, e As EventArgs)
@@ -79,6 +88,27 @@ Partial Class ShoppingListControl
     Public Function GetShoppingList() As ShoppingList
         Return Me.shoppingList
     End Function
+
+    Public Sub UpdateRoutineIndicator()
+        ' Check if the list is a routine and set the image accordingly
+        If shoppingList.getRoutine() Then
+            routinePictureBox.Image = My.Resources.routine ' Make sure the resource name is correct
+        Else
+            routinePictureBox.Image = Nothing ' Clear the image if it's not a routine
+        End If
+    End Sub
+
+    Private Sub ToggleRoutineStatus(sender As Object, e As EventArgs)
+        shoppingList.changeRoutine() ' Toggle the routine status
+        UpdateRoutineIndicator() ' Refresh the image
+
+        If shoppingList.getRoutine() Then
+            MessageBox.Show($"{shoppingList.GetListName()} is now a routine shopping list.", "Routine Status Updated", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show($"{shoppingList.GetListName()} is no longer a routine shopping list.", "Routine Status Updated", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+    End Sub
 
 
 

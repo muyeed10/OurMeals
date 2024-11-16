@@ -1,6 +1,7 @@
 ﻿Public Class ShoppingList
     Private listName As String
     Private itemArr As New ArrayList()
+    Private isRoutine As Boolean = False
 
     Public Sub New(listName As String, Optional itemArr As ArrayList = Nothing)
         Me.listName = listName
@@ -52,4 +53,17 @@
         End If
         Return False
     End Function
+
+    Public Sub changeRoutine()
+        If isRoutine Then
+            isRoutine = False
+        Else
+            isRoutine = True
+        End If
+    End Sub
+
+    Public Function getRoutine()
+        Return isRoutine
+    End Function
+
 End Class

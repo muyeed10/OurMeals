@@ -43,6 +43,7 @@
 
         shoppingListArr.Add(shoppingListControl)
 
+        shoppingListControl.UpdateRoutineIndicator()
         DisplayItemsInForm()
     End Sub
 
@@ -90,6 +91,7 @@
         weeklyList.AddItem(New Item("Milk", 2))
         weeklyList.AddItem(New Item("Eggs", 12))
         weeklyList.AddItem(New Item("Bread", 1))
+        weeklyList.changeRoutine()
 
         Dim bakingList As New ShoppingList("Baking Supplies")
         bakingList.AddItem(New Item("Flour", 1))
