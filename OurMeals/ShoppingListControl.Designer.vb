@@ -119,8 +119,12 @@ Partial Class ShoppingListControl
 
     End Sub
 
-    Public Sub UpdateDescription(newDescription As String)
-        descriptionLabel.Text = newDescription
+    Public Sub UpdateDescription()
+        descriptionLabel.Text = shoppingList.getDescription()
+    End Sub
+
+    Public Sub UpdateTitle()
+        listLabel.Text = shoppingList.GetListName()
     End Sub
 
 

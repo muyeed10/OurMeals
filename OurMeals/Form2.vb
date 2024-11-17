@@ -66,4 +66,41 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
+
+    Private Sub ChangeTitleBtn_Click(sender As Object, e As EventArgs) Handles ChangeTitleBtn.Click
+        Dim userInput As String
+        userInput = InputBox("Please enter what you would like to change the list title to:", "Change Title")
+
+        If Not String.IsNullOrWhiteSpace(userInput) Then
+            shoppingList.SetListName(userInput)
+            ShoppingListName.Text = shoppingList.GetListName()
+
+            Dim parentControl = CType(Form1.shoppingListArr.Cast(Of ShoppingListControl).FirstOrDefault(Function(ctrl) ctrl.GetShoppingList() Is shoppingList), ShoppingListControl)
+            If parentControl IsNot Nothing Then
+                parentControl.UpdateTitle()
+            End If
+
+            MessageBox.Show($"The title of the shopping list is now {userInput}", "List Title Changed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("List Title was not changed. Ensure non-blank input is given.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Private Sub ChangeDescriptionBtn_Click(sender As Object, e As EventArgs) Handles ChangeDescriptionBtn.Click
+        Dim userInput As String
+        userInput = InputBox("Please enter what you would like to change the list description to:", "Change Description")
+
+        If Not String.IsNullOrWhiteSpace(userInput) Then
+            shoppingList.changeDescription(userInput)
+
+            Dim parentControl = CType(Form1.shoppingListArr.Cast(Of ShoppingListControl).FirstOrDefault(Function(ctrl) ctrl.GetShoppingList() Is shoppingList), ShoppingListControl)
+            If parentControl IsNot Nothing Then
+                parentControl.UpdateDescription()
+            End If
+
+            MessageBox.Show($"The description of the shopping list is now {userInput}", "List Description Changed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("List Description was not changed. Ensure non-blank input is given.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
 End Class

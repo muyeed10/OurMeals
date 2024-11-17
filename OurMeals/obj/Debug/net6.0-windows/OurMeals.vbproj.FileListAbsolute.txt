@@ -83,3 +83,4 @@ C:\Users\zakir\Documents\CPS613\ProjectOtherWork\muyeedswork\OurMeals\OurMeals\o
 C:\Users\zakir\Documents\CPS613\ProjectOtherWork\muyeedswork\OurMeals\OurMeals\obj\Debug\net6.0-windows\OurMeals.Recipes.resources
 C:\Users\zakir\Documents\CPS613\ProjectOtherWork\muyeedswork\OurMeals\OurMeals\obj\Debug\net6.0-windows\OurMeals.RecipeItems.resources
 C:\Users\zakir\Documents\CPS613\ProjectOtherWork\muyeedswork\OurMeals\OurMeals\obj\Debug\net6.0-windows\OurMeals.AddItemFromRecipe.resources
+C:\Users\zakir\Documents\CPS613\ProjectOtherWork\muyeedswork\OurMeals\OurMeals\obj\Debug\net6.0-windows\OurMeals.ChangeListTitle.resources
