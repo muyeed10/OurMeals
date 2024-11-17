@@ -24,14 +24,10 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ShoppingListName = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ItemsCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.QuantityCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PurchasedCheckbox = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.DeleteBut = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.EditBut = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.AddButton = New System.Windows.Forms.Button()
         Me.ChangeTitleBtn = New System.Windows.Forms.Button()
         Me.ChangeDescriptionBtn = New System.Windows.Forms.Button()
@@ -48,6 +44,12 @@ Partial Class Form2
         Me.FridgeButton = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ItemsCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QuantityCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PurchasedCheckbox = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.EditBut = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.AddToOtherList = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.DeleteBut = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
@@ -78,7 +80,7 @@ Partial Class Form2
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemsCol, Me.QuantityCol, Me.PurchasedCheckbox, Me.DeleteBut, Me.EditBut})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemsCol, Me.QuantityCol, Me.PurchasedCheckbox, Me.EditBut, Me.AddToOtherList, Me.DeleteBut})
         Me.DataGridView1.Location = New System.Drawing.Point(14, 74)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
@@ -87,60 +89,6 @@ Partial Class Form2
         Me.DataGridView1.RowTemplate.Height = 33
         Me.DataGridView1.Size = New System.Drawing.Size(790, 547)
         Me.DataGridView1.TabIndex = 21
-        '
-        'ItemsCol
-        '
-        Me.ItemsCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.ItemsCol.HeaderText = "Items"
-        Me.ItemsCol.MinimumWidth = 8
-        Me.ItemsCol.Name = "ItemsCol"
-        Me.ItemsCol.ReadOnly = True
-        '
-        'QuantityCol
-        '
-        Me.QuantityCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.QuantityCol.HeaderText = "Quantity"
-        Me.QuantityCol.MinimumWidth = 8
-        Me.QuantityCol.Name = "QuantityCol"
-        Me.QuantityCol.ReadOnly = True
-        '
-        'PurchasedCheckbox
-        '
-        Me.PurchasedCheckbox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.PurchasedCheckbox.HeaderText = "Purchased"
-        Me.PurchasedCheckbox.MinimumWidth = 8
-        Me.PurchasedCheckbox.Name = "PurchasedCheckbox"
-        Me.PurchasedCheckbox.ReadOnly = True
-        '
-        'DeleteBut
-        '
-        Me.DeleteBut.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
-        Me.DeleteBut.DefaultCellStyle = DataGridViewCellStyle1
-        Me.DeleteBut.HeaderText = "Remove"
-        Me.DeleteBut.MinimumWidth = 8
-        Me.DeleteBut.Name = "DeleteBut"
-        Me.DeleteBut.ReadOnly = True
-        Me.DeleteBut.Text = "Remove Item"
-        '
-        'EditBut
-        '
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        Me.EditBut.DefaultCellStyle = DataGridViewCellStyle2
-        Me.EditBut.HeaderText = "Edit"
-        Me.EditBut.MinimumWidth = 8
-        Me.EditBut.Name = "EditBut"
-        Me.EditBut.ReadOnly = True
-        Me.EditBut.Text = "Edit Item"
-        Me.EditBut.Width = 150
         '
         'AddButton
         '
@@ -314,6 +262,73 @@ Partial Class Form2
         Me.Label6.Text = "Home"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ItemsCol
+        '
+        Me.ItemsCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ItemsCol.HeaderText = "Items"
+        Me.ItemsCol.MinimumWidth = 8
+        Me.ItemsCol.Name = "ItemsCol"
+        Me.ItemsCol.ReadOnly = True
+        '
+        'QuantityCol
+        '
+        Me.QuantityCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.QuantityCol.HeaderText = "Quantity"
+        Me.QuantityCol.MinimumWidth = 8
+        Me.QuantityCol.Name = "QuantityCol"
+        Me.QuantityCol.ReadOnly = True
+        '
+        'PurchasedCheckbox
+        '
+        Me.PurchasedCheckbox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.PurchasedCheckbox.HeaderText = "Purchased"
+        Me.PurchasedCheckbox.MinimumWidth = 8
+        Me.PurchasedCheckbox.Name = "PurchasedCheckbox"
+        Me.PurchasedCheckbox.ReadOnly = True
+        '
+        'EditBut
+        '
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
+        Me.EditBut.DefaultCellStyle = DataGridViewCellStyle1
+        Me.EditBut.HeaderText = "Edit"
+        Me.EditBut.MinimumWidth = 8
+        Me.EditBut.Name = "EditBut"
+        Me.EditBut.ReadOnly = True
+        Me.EditBut.Text = "Click To Edit"
+        Me.EditBut.Width = 150
+        '
+        'AddToOtherList
+        '
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.AddToOtherList.DefaultCellStyle = DataGridViewCellStyle2
+        Me.AddToOtherList.HeaderText = "Add Item To Another List"
+        Me.AddToOtherList.MinimumWidth = 6
+        Me.AddToOtherList.Name = "AddToOtherList"
+        Me.AddToOtherList.ReadOnly = True
+        Me.AddToOtherList.Width = 125
+        '
+        'DeleteBut
+        '
+        Me.DeleteBut.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        Me.DeleteBut.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DeleteBut.HeaderText = "Remove"
+        Me.DeleteBut.MinimumWidth = 8
+        Me.DeleteBut.Name = "DeleteBut"
+        Me.DeleteBut.ReadOnly = True
+        Me.DeleteBut.Text = "Remove Item"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -340,11 +355,6 @@ Partial Class Form2
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents AddButton As Button
-    Friend WithEvents ItemsCol As DataGridViewTextBoxColumn
-    Friend WithEvents QuantityCol As DataGridViewTextBoxColumn
-    Friend WithEvents PurchasedCheckbox As DataGridViewCheckBoxColumn
-    Friend WithEvents DeleteBut As DataGridViewButtonColumn
-    Friend WithEvents EditBut As DataGridViewButtonColumn
     Friend WithEvents ChangeTitleBtn As Button
     Friend WithEvents ChangeDescriptionBtn As Button
     Friend WithEvents GroupBox4 As GroupBox
@@ -360,4 +370,10 @@ Partial Class Form2
     Friend WithEvents FridgeButton As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents ItemsCol As DataGridViewTextBoxColumn
+    Friend WithEvents QuantityCol As DataGridViewTextBoxColumn
+    Friend WithEvents PurchasedCheckbox As DataGridViewCheckBoxColumn
+    Friend WithEvents EditBut As DataGridViewButtonColumn
+    Friend WithEvents AddToOtherList As DataGridViewButtonColumn
+    Friend WithEvents DeleteBut As DataGridViewButtonColumn
 End Class

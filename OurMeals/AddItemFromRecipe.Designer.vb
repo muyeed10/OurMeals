@@ -123,7 +123,7 @@ Partial Class AddItemFromRecipe
         Me.Controls.Add(Me.AddBut)
         Me.Controls.Add(Me.quantityBox)
         Me.Name = "AddItemFromRecipe"
-        Me.Text = "AddItemFromRecipe"
+        Me.Text = "Add Item To An Existing List"
         CType(Me.quantityBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

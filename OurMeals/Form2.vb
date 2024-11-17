@@ -51,10 +51,20 @@
             End If
 
         End If
+
+        If e.ColumnIndex = DataGridView1.Columns("AddToOtherList").Index Then
+            Dim itemName As String = DataGridView1.Rows(e.RowIndex).Cells("ItemsCol").Value.ToString()
+            Dim quantity As String = DataGridView1.Rows(e.RowIndex).Cells("QuantityCol").Value.ToString()
+            AddItemFromRecipe.Show()
+            AddItemFromRecipe.DefaultInputs(itemName, quantity)
+        End If
     End Sub
 
     Private Sub PopulateDataGridView()
         DataGridView1.Rows.Clear()
+        DataGridView1.Columns("EditBut").DefaultCellStyle.NullValue = "Click To Edit"
+        DataGridView1.Columns("DeleteBut").DefaultCellStyle.NullValue = "Click To Delete"
+        DataGridView1.Columns("AddToOtherList").DefaultCellStyle.NullValue = "Click To Add"
 
         Dim items = shoppingList.GetItems()
 
