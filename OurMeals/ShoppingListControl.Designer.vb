@@ -9,6 +9,7 @@ Partial Class ShoppingListControl
     Private listLabel As Label
     Private parentForm As Form1
     Private routinePictureBox As PictureBox
+    Private descriptionLabel As Label
 
     Public Sub New(parent As Form1, shoppingList As ShoppingList)
         Me.parentForm = parent
@@ -45,7 +46,7 @@ Partial Class ShoppingListControl
 
         ' Create the Make Routine button
         makeRoutineButton = New Button()
-        makeRoutineButton.Text = "Make Routine"
+        makeRoutineButton.Text = "Make/Unmake Routine"
         makeRoutineButton.Size = New Size(158, 54)
         makeRoutineButton.Location = New Point(758, 48)
         AddHandler makeRoutineButton.Click, AddressOf ToggleRoutineStatus
@@ -54,9 +55,16 @@ Partial Class ShoppingListControl
         removeButton = New Button()
         removeButton.BackgroundImage = My.Resources.trashcan
         removeButton.BackgroundImageLayout = ImageLayout.Zoom
-        removeButton.Size = New Size(57, 58)
+        removeButton.Size = New Size(57, 54)
         removeButton.Location = New Point(925, 48)
         AddHandler removeButton.Click, AddressOf RemoveButton_Click
+
+        descriptionLabel = New Label()
+        descriptionLabel.Text = shoppingList.getDescription()
+        descriptionLabel.Font = New Font("Segoe UI", 8.0F, FontStyle.Italic)
+        descriptionLabel.ForeColor = Color.Gray
+        descriptionLabel.Location = New Point(listLabel.Location.X, listLabel.Location.Y + listLabel.Height + 5)
+        descriptionLabel.Size = New Size(500, 20) ' Adjust width as needed for longer descriptions
 
         ' Add controls to the GroupBox
         Me.Controls.Add(routinePictureBox)
@@ -64,6 +72,7 @@ Partial Class ShoppingListControl
         Me.Controls.Add(viewEditButton)
         Me.Controls.Add(makeRoutineButton)
         Me.Controls.Add(removeButton)
+        Me.Controls.Add(descriptionLabel)
 
         ' Set the routine indicator based on the current routine status
         UpdateRoutineIndicator()
@@ -110,7 +119,9 @@ Partial Class ShoppingListControl
 
     End Sub
 
-
+    Public Sub UpdateDescription(newDescription As String)
+        descriptionLabel.Text = newDescription
+    End Sub
 
 
     'Control overrides dispose to clean up the component list.
